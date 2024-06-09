@@ -28,12 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            menuStrip1 = new MenuStrip();
+            fontToolStripMenuItem = new ToolStripMenuItem();
+            fontDialog1 = new FontDialog();
+            label1 = new Label();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(24, 24);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fontToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 33);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // fontToolStripMenuItem
+            // 
+            fontToolStripMenuItem.Name = "fontToolStripMenuItem";
+            fontToolStripMenuItem.Size = new Size(129, 29);
+            fontToolStripMenuItem.Text = "Change Font";
+            fontToolStripMenuItem.Click += fontToolStripMenuItem_Click_1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(24, 221);
+            label1.Name = "label1";
+            label1.Size = new Size(102, 25);
+            label1.TabIndex = 1;
+            label1.Text = "Hello Word";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            ControlBox = false;
+            Controls.Add(label1);
+            Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            Name = "Form1";
+            Text = "Form1";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem fontToolStripMenuItem;
+        private FontDialog fontDialog1;
+        private Label label1;
     }
 }

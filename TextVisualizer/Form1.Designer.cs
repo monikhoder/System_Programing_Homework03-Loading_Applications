@@ -28,12 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            textBox = new TextBox();
+            SuspendLayout();
+            // 
+            // textBox
+            // 
+            textBox.Location = new Point(12, 26);
+            textBox.Name = "textBox";
+            textBox.Size = new Size(738, 31);
+            textBox.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 69);
+            Controls.Add(textBox);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox textBox;
     }
 }
